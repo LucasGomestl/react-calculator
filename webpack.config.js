@@ -55,6 +55,10 @@ module.exports =
                     MiniCssExtractPlugin.loader,
                     'css-loader',
                 ]
+            },
+            {
+                test:/\.(png|svg|jpg|gif|jpeg|ttf)$/,
+                use:['file-loader']
             }
         ]
     }
